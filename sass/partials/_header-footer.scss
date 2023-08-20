@@ -1,0 +1,42 @@
+
+header 
+{
+background-color: $lila;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+.logoPrincipal 
+ {
+   width: 150px;
+ }
+ .c-menu 
+{
+  background-color: $lila;
+  font-size: 1.5rem;
+}
+}
+footer 
+{
+background-color: #373638;
+.logo2 
+{
+width: 100%;
+img {
+  width: 50%;
+}
+}
+.redes1 
+{
+width: 10%;
+}
+h3 
+{
+  color: aliceblue;
+  text-decoration: overline;
+  text-align: center;
+  img 
+  {
+    width: 10%;
+  }
+}
+}

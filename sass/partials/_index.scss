@@ -1,0 +1,71 @@
+.titulo 
+{
+    background-color: #9b6dc8;
+    .presentacion
+ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .portada 
+ {
+  width: 400px;
+ }
+ .descripcion 
+ {
+  color: aliceblue;
+  font-size: 1.5rem;
+ }
+ }
+}
+main 
+{
+background-color: #b9c1d8;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 40px;
+.caja-grid 
+{
+display: grid;
+grid-template-areas: 
+"encabezado encabezado"
+"imagen1   imagen2"
+"  t1        t2"
+"imagen3    imagen4"
+"   t3         t4";
+
+
+grid-template-rows: 100px 200px 50px 200px 50px;
+grid-template-columns: 2fr 2fr;
+justify-items: center;
+img 
+{
+    width: 300px;
+}
+.grid-encabezado {
+    grid-area: encabezado;
+  }
+  .grid-imagen-1{
+    grid-area: imagen1;
+  }
+  .grid-imagen-2 {
+    grid-area: imagen2;
+  }
+  .grid-t-1 {
+    grid-area: t1;
+  }
+  .grid-t-2 {
+    grid-area: t2;
+  }
+  .grid-imagen-3 {
+    grid-area: imagen3;
+  }
+  .grid-imagen-4 {
+    grid-area: imagen4;
+  }
+  .grid-t-3 {
+    grid-area: t3;
+  }
+  .grid-t-4 {
+    grid-area: t4;}
+}
+}
