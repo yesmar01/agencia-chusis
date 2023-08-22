@@ -1,4 +1,4 @@
-@media only screen and (max-width:600px) 
+@media only screen and (max-width:800px) 
 { main .caja-grid 
 {
     grid-template-areas: 
@@ -13,5 +13,6 @@
     "t4";
     grid-template-columns: 1fr;
     grid-template-rows: 80px 250px 150px 250px 150px 300px 150px 250px 150px;
+background-color: aqua;
 }
 }
