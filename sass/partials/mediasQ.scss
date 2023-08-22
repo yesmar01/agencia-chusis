@@ -1,0 +1,19 @@
+@media only screen and (max-width:500px) 
+{ main .caja-grid 
+{
+    grid-template-areas: 
+    "encabezado"
+    "imagen1"
+    "t1"
+    "imagen2"
+    "t2"
+    "imagen3"
+    "t3"
+    "imagen4"
+    "t4";
+    grid-template-rows: 80px 300px 70px 300px 70px 300px 70px 300px 70px;
+    grid-template-columns: 1fr;
+    align-content:center;
+    justify-items:center;
+}
+}

@@ -38,9 +38,12 @@ header .c-menu {
   background-color: #7f7e80;
   font-size: 1.5rem;
 }
+header .botones {
+  color: #530f66;
+}
 
 footer {
-  background-color: #373638;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
 }
 footer .logo2 {
   width: 100%;
@@ -48,32 +51,44 @@ footer .logo2 {
 footer .logo2 img {
   width: 50%;
 }
-footer .redes1 {
+footer .redes1, footer .redes3, footer .redes2 {
+  border-radius: 30%;
+  border: 1px solid #7f7e80;
   width: 10%;
 }
-footer h3 {
+footer .redes {
   color: aliceblue;
   text-decoration: overline;
   text-align: center;
 }
-footer h3 img {
-  width: 10%;
+footer .redes img {
+  width: 20%;
 }
 
-.titulo {
-  background-color: #9b6dc8;
+.introduccion {
+  background-color: #d197cf;
+  text-align: center;
 }
-.titulo .presentacion {
+.introduccion img {
+  opacity: 60%;
+}
+.introduccion h1 {
+  color: rgb(226, 131, 218);
+  font-size: 2rem;
+  text-shadow: -2px 1px 2px #3A3232;
+}
+.introduccion p {
+  color: rgb(181, 99, 206);
+  font-size: 2rem;
+  text-shadow: -2px 1px 2px #3A3232;
+}
+.introduccion .presentacion {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.titulo .presentacion .portada {
-  width: 400px;
-}
-.titulo .presentacion .descripcion {
-  color: aliceblue;
-  font-size: 1.5rem;
+.introduccion .efecto:hover {
+  color: blueviolet;
 }
 
 main {
@@ -85,12 +100,12 @@ main {
 main .caja-grid {
   display: grid;
   grid-template-areas: "encabezado encabezado" "imagen1   imagen2" "  t1        t2" "imagen3    imagen4" "   t3         t4";
-  grid-template-rows: 100px 200px 50px 200px 50px;
+  grid-template-rows: 100px 300px 90px 300px 90px;
   grid-template-columns: 2fr 2fr;
   justify-items: center;
 }
 main .caja-grid img {
-  width: 300px;
+  width: 400px;
 }
 main .caja-grid .grid-encabezado {
   grid-area: encabezado;
@@ -129,9 +144,10 @@ main .caja-grid .grid-t-4 {
   width: 90%;
   padding: 10%;
 }
-.hotel-t img .boton {
-  margin: 10%;
+
+.tecla {
   text-align: center;
+  padding: 10%;
 }
 
 .t-destinos img {
@@ -142,24 +158,20 @@ main .caja-grid .grid-t-4 {
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
-}
-
-.introduccion {
-  background-color: #d197cf;
   text-align: center;
 }
-.introduccion img {
-  opacity: 70%;
+
+.boton {
+  text-align: center;
+  padding: 10%;
 }
-.introduccion h1 {
-  color: rgb(226, 131, 218);
-  font-size: 3rem;
-  text-shadow: -2px 1px 2px #3A3232;
+
+.titulo {
+  background-color: #4e436e;
+  text-align: center;
 }
-.introduccion p {
-  color: rgb(181, 99, 206);
-  font-size: 3rem;
-  text-shadow: -2px 1px 2px #3A3232;
+.titulo .portada {
+  width: 30%;
 }
 
 .c-login {
@@ -178,6 +190,16 @@ main .caja-grid .grid-t-4 {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  main .caja-grid {
+    grid-template-areas: "encabezado" "imagen1" "t1" "imagen2" "t2" "imagen3" "t3" "imagen4" "t4";
+    grid-template-rows: 80px 300px 70px 300px 70px 300px 70px 300px 70px;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+  }
 }
 
 /*# sourceMappingURL=adornos.css.map */

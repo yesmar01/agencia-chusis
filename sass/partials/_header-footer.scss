@@ -9,34 +9,49 @@ justify-content: space-between;
  {
    width: 150px;
  }
- .c-menu 
+ .c-menu
 {
   background-color: $lila;
   font-size: 1.5rem;
 }
+.botones 
+{
+color: #530f66;
+}
 }
 footer 
 {
-background-color: #373638;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
 .logo2 
 {
 width: 100%;
-img {
-  width: 50%;
-}
-}
-.redes1 
+img 
 {
-width: 10%;
+width: 50%;
 }
-h3 
+}
+.redes1
+  {
+    border-radius: 30%;
+    border: 1px solid $lila;
+    width: 10%;
+  }
+  .redes2
+  {
+    @extend .redes1;
+  }
+  .redes3
+  {
+    @extend .redes1;
+  }
+.redes
 {
   color: aliceblue;
   text-decoration: overline;
   text-align: center;
   img 
   {
-    width: 10%;
+    width: 20%;
   }
 }
 }

@@ -1,20 +1,31 @@
-.titulo 
+    .introduccion 
+ {
+background-color: #d197cf;
+text-align: center;
+img 
 {
-    background-color: #9b6dc8;
+  opacity: 60%;
+}
+h1 {
+  color: rgb(226, 131, 218);
+  font-size: 2rem;
+  text-shadow: -2px 1px 2px #3A3232;
+  }
+p 
+{
+color: rgb(181, 99, 206);
+font-size: 2rem;
+text-shadow: -2px 1px 2px #3A3232;
+}
     .presentacion
  {
   display: flex;
   justify-content: center;
   align-items: center;
-  .portada 
- {
-  width: 400px;
  }
- .descripcion 
+ .efecto:hover 
  {
-  color: aliceblue;
-  font-size: 1.5rem;
- }
+color: blueviolet;
  }
 }
 main 
@@ -34,12 +45,12 @@ grid-template-areas:
 "   t3         t4";
 
 
-grid-template-rows: 100px 200px 50px 200px 50px;
+grid-template-rows: 100px 300px 90px 300px 90px;
 grid-template-columns: 2fr 2fr;
 justify-items: center;
 img 
 {
-    width: 300px;
+    width: 400px;
 }
 .grid-encabezado {
     grid-area: encabezado;
