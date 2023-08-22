@@ -1,7 +1,7 @@
 
 header 
 {
-background-color: $lila;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -11,7 +11,7 @@ justify-content: space-between;
  }
  .c-menu
 {
-  background-color: $lila;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
   font-size: 1.5rem;
 }
 .botones 

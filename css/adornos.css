@@ -26,7 +26,7 @@ p {
 }
 
 header {
-  background-color: #7f7e80;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,7 +35,7 @@ header .logoPrincipal {
   width: 150px;
 }
 header .c-menu {
-  background-color: #7f7e80;
+  background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
   font-size: 1.5rem;
 }
 header .botones {
@@ -82,11 +82,6 @@ footer .redes img {
   font-size: 2rem;
   text-shadow: -2px 1px 2px #3A3232;
 }
-.introduccion .presentacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .introduccion .efecto:hover {
   color: blueviolet;
 }
@@ -100,12 +95,12 @@ main {
 main .caja-grid {
   display: grid;
   grid-template-areas: "encabezado encabezado" "imagen1   imagen2" "  t1        t2" "imagen3    imagen4" "   t3         t4";
-  grid-template-rows: 100px 300px 90px 300px 90px;
+  grid-template-rows: 100px 400px 150px 400px 150px;
   grid-template-columns: 2fr 2fr;
   justify-items: center;
 }
 main .caja-grid img {
-  width: 400px;
+  width: 90%;
 }
 main .caja-grid .grid-encabezado {
   grid-area: encabezado;
@@ -192,13 +187,11 @@ main .caja-grid .grid-t-4 {
   border: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   main .caja-grid {
     grid-template-areas: "encabezado" "imagen1" "t1" "imagen2" "t2" "imagen3" "t3" "imagen4" "t4";
-    grid-template-rows: 80px 300px 70px 300px 70px 300px 70px 300px 70px;
     grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
+    grid-template-rows: 80px 250px 150px 250px 150px 300px 150px 250px 150px;
   }
 }
 

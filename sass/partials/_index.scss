@@ -17,12 +17,6 @@ color: rgb(181, 99, 206);
 font-size: 2rem;
 text-shadow: -2px 1px 2px #3A3232;
 }
-    .presentacion
- {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
  .efecto:hover 
  {
 color: blueviolet;
@@ -45,12 +39,12 @@ grid-template-areas:
 "   t3         t4";
 
 
-grid-template-rows: 100px 300px 90px 300px 90px;
+grid-template-rows: 100px 400px 150px 400px 150px;
 grid-template-columns: 2fr 2fr;
 justify-items: center;
 img 
 {
-    width: 400px;
+    width: 90%;
 }
 .grid-encabezado {
     grid-area: encabezado;
