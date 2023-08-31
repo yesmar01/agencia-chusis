@@ -24,10 +24,12 @@ footer
   background-image: linear-gradient(to right top, #ebaacf, #ee9cd1, #ee8dd5, #ec7eda, #e870e1, #d963d9, #c956d1, #b949c9, #9e3aaf, #842c96, #6b1e7e, #530f66);
 .logo2 
 {
-width: 100%;
+@include tamaños(100%, 80%);
+border-radius: 100%;
 img 
 {
-width: 50%;
+width: 40%;
+text-align: center;
 }
 }
 .redes1

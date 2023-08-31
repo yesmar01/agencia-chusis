@@ -29,4 +29,9 @@ $morado:#220434;
   color: $morado;
   font-size: 1rem;
   }
+  @mixin tamaños($width, $height) 
+  {
+  width: $width;
+  height: $height;
+  }
   
