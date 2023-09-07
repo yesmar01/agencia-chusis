@@ -15,3 +15,20 @@
 
     }
 }
+@media only screen and (min-width:501px) and (max-width:1020px) {
+    main .caja-grid {
+        grid-template-areas:
+            "encabezado"
+            "imagen1"
+            "t1"
+            "imagen2"
+            "t2"
+            "imagen3"
+            "t3"
+            "imagen4"
+            "t4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 300px 200px 300px 200px 300px 200px 300px 200px;
+
+    }
+}
