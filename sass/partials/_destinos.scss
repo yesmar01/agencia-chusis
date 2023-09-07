@@ -1,16 +1,20 @@
-.t-destinos img 
-{
-    width: 70%;
+.t-destinos {
+  @include tamaños (100%, 70%);
 }
-.oferta 
-{
+
+.t-destinos img {
+  @include tamaños (80%, 40%);
+  align-items: center;
+}
+
+.oferta {
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
   text-align: center;
 }
-.boton 
-{
-text-align: center;
-padding: 10%;
+
+.boton {
+  text-align: center;
+  padding: 10%;
 }

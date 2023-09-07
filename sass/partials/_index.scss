@@ -1,77 +1,86 @@
-    .introduccion 
- {
-background-color: #d197cf;
-text-align: center;
-img 
-{
-  opacity: 60%;
-}
-h1 {
-  color: rgb(226, 131, 218);
-  font-size: 2rem;
-  text-shadow: -2px 1px 2px #3A3232;
-  }
-p 
-{
-color: rgb(181, 99, 206);
-font-size: 2rem;
-text-shadow: -2px 1px 2px #3A3232;
-}
- .efecto:hover 
- {
-color: blueviolet;
- }
-}
-main 
-{
-background-color: #b9c1d8;
-margin-top: 30px;
-margin-bottom: 30px;
-padding: 40px;
-.caja-grid 
-{
-display: grid;
-grid-template-areas: 
-"encabezado encabezado"
-"imagen1   imagen2"
-"  t1        t2"
-"imagen3    imagen4"
-"   t3         t4";
+    .introduccion {
+      background-color: #d197cf;
+      text-align: center;
+
+      img {
+        opacity: 60%;
+      }
+
+      h1 {
+        color: rgb(226, 131, 218);
+        font-size: 3rem;
+        text-shadow: -2px 1px 2px #3A3232;
+      }
+
+      p {
+        color: rgb(186, 28, 234);
+        font-size: 2rem;
+        text-shadow: -2px 1px 2px #3A3232;
+      }
+    }
+
+    main {
+      background-color: #b9c1d8;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 40px;
+
+      .caja-grid {
+        display: grid;
+        grid-template-areas:
+          "encabezado encabezado"
+          "imagen1   imagen2"
+          "  t1        t2"
+          "imagen3    imagen4"
+          "   t3         t4";
 
 
-grid-template-rows: 100px 400px 150px 400px 150px;
-grid-template-columns: 2fr 2fr;
-justify-items: center;
-img 
-{
-    width: 90%;
-    border-style:double;
-}
-.grid-encabezado {
-    grid-area: encabezado;
-  }
-  .grid-imagen-1{
-    grid-area: imagen1;
-  }
-  .grid-imagen-2 {
-    grid-area: imagen2;
-  }
-  .grid-t-1 {
-    grid-area: t1;
-  }
-  .grid-t-2 {
-    grid-area: t2;
-  }
-  .grid-imagen-3 {
-    grid-area: imagen3;
-  }
-  .grid-imagen-4 {
-    grid-area: imagen4;
-  }
-  .grid-t-3 {
-    grid-area: t3;
-  }
-  .grid-t-4 {
-    grid-area: t4;}
-}
-}
+        grid-template-rows: 100px 400px 150px 400px 150px;
+        grid-template-columns: 2fr 2fr;
+        justify-items: center;
+
+        img {
+          @include tamaños (80%, 90%);
+          border-style: double;
+        }
+
+        .grid-encabezado {
+          grid-area: encabezado;
+        }
+
+        .grid-imagen-1 {
+          grid-area: imagen1;
+        }
+
+        .grid-imagen-2 {
+          grid-area: imagen2;
+        }
+
+        .grid-t-1 {
+          grid-area: t1;
+        }
+
+        .grid-t-2 {
+          grid-area: t2;
+        }
+
+        .grid-imagen-3 {
+          grid-area: imagen3;
+        }
+
+        .grid-imagen-4 {
+          grid-area: imagen4;
+        }
+
+        .grid-t-3 {
+          grid-area: t3;
+        }
+
+        .grid-t-4 {
+          grid-area: t4;
+        }
+      }
+    }
+    h1 {
+      text-decoration: none;
+    }

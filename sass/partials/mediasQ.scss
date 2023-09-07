@@ -1,18 +1,17 @@
-@media only screen and (max-width:800px) 
-{ main .caja-grid 
-{
-    grid-template-areas: 
-    "encabezado"
-    "imagen1"
-    "t1"
-    "imagen2"
-    "t2"
-    "imagen3"
-    "t3"
-    "imagen4"
-    "t4";
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 250px 150px 250px 150px 300px 150px 250px 150px;
+@media only screen and (max-width:500px) {
+    main .caja-grid {
+        grid-template-areas:
+            "encabezado"
+            "imagen1"
+            "t1"
+            "imagen2"
+            "t2"
+            "imagen3"
+            "t3"
+            "imagen4"
+            "t4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 250px 150px 250px 150px 300px 150px 250px 150px;
 
-}
+    }
 }

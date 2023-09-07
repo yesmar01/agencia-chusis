@@ -1,11 +1,9 @@
-.hotel-t img
-{
-  width: 90%;
-  padding: 10%;
-  
+.hotel-t img {
+  @include tamaños (100%, 40%);
+
 }
-.tecla 
-{
-text-align: center;
-padding: 10%;
+
+.tecla {
+  text-align: center;
+  padding: 10%;
 }

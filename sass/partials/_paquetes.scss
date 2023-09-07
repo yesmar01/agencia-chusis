@@ -1,5 +1,9 @@
-.packs img 
-{
-width: 90%;
-padding: 5%;
+h1 {
+    padding: 3%;
+}
+.tamaño {
+    @include tamaños (100%, 50%);
+}
+.boton {
+   margin: 10%;
 }
